@@ -1,0 +1,23 @@
+rectangle name R min-x 200 min-y 200 width 80 height 80 color 1 1 0 from 1 to 100
+move name R moveto 200 200 600 500 from 1 to 50
+rectangle name S min-x 200 min-y 200 width 60 height 60 color 1 0 0 from 1 to 100
+move name S moveto 200 200 1000 200 from 1 to 50
+rectangle name T min-x 200 min-y 200 width 40 height 40 color 0 0 1 from 1 to 100
+move name T moveto 200 200 1000 200 from 1 to 50
+rectangle name U min-x 200 min-y 200 width 20 height 20 color 0 1 0 from 1 to 100
+move name U moveto 200 200 600 200 from 1 to 50
+layer index 2 named R named S named T named U close
+rectangle name V min-x 400 min-y 200 width 100 height 80 color 1 1 0 from 1 to 100
+rectangle name W min-x 400 min-y 200 width 60 height 80 color 1 0 0 from 1 to 100
+rectangle name X min-x 400 min-y 200 width 40 height 20 color 0 0 1 from 1 to 100
+rectangle name Y min-x 400 min-y 200 width 10 height 20 color 0 1 0 from 1 to 100
+rotate name Y by 360 from 1 to 100
+rotate name T by 450 from 50 to 100
+rotate name S by 30 from 20 to 30
+rotate name W by 90 from 70 to 100
+layer index 1 named V named W named X named Y close
+oval name C center-x 400 center-y 250 x-radius 60 y-radius 30 color 0 0 1 from 1 to 100
+oval name D center-x 450 center-y 100 x-radius 30 y-radius 30 color 0 0 0 from 1 to 100
+rotate name C by 360 from 50 to 95
+move name D moveto 450 100 400 400 from 1 to 50
+layer index 3 named C named D close

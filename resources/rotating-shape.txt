@@ -1,0 +1,2 @@
+rectangle name R min-x 200 min-y 200 width 80 height 80 color 1 1 0 from 1 to 100
+rotate name R by 360 from 2 to 100

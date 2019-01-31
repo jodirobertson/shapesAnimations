@@ -1,0 +1,19 @@
+The model had a new IFigure class called IFigureImplRotatable that extends IFigureImplDummy to
+include a degree of rotation if an IAnimationRotate is called on it. The IAnimationRotate class
+was added to the IAnimations list, and allows a shape to be rotated in place.
+
+A new IModel class called IModelImplLayers was also created to allow for layers of IFigures to be
+implemented in the hybrid view. It extends IModelImpl.
+
+IViewImplSVGLayered was created to extend IViewImplSVGAnimation and allow layered SVG outputs.
+IViewImplSVGLayeredLooped was created to extend IViewImplLooped to allow for looped, layered SVG
+outputs. IViewImplVisualLayered was created to extend IViewImplVisualAnimation to allow for
+rendering of layers within the visual view.
+
+An anonymous ChangeListener class was added to respond to the JSlider scrubber that was implemented
+in the IViewImplHybridAnimation view. The MyPanel class was also updated to be able to draw
+IFigureImplRotatables.
+
+I chose to extend most of these classes because in most cases, I only needed to override one method
+to create the implementation, and still relied on helpers from the base class. In this way, I used
+a decorator pattern to implement most of these features.
